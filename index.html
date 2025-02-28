@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cáncer de Mama - Información y Prevención</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Monica Garcia</h1>
+        <p>Micropigmentation Studio</p>
+    </header>
+
+    <div class="header-image-container">
+        <img src="C:\Users\Usuario\Desktop\RESPALDO\Desktop\programar\monica\IMG-20250227-WA0015.jpg" class="header-image active">
+        <img src="C:\Users\Usuario\Desktop\RESPALDO\Desktop\programar\monica\IMG-20250227-WA0014.jpg" class="header-image">
+        <img src="C:\Users\Usuario\Desktop\RESPALDO\Desktop\programar\monica\IMG-20250227-WA0023.jpg" class="header-image">
+        <img src="C:\Users\Usuario\Desktop\RESPALDO\Desktop\programar\monica\IMG-20250227-WA0018.jpg" class="header-image">
+        <img src="C:\Users\Usuario\Desktop\RESPALDO\Desktop\programar\monica\IMG-20250227-WA0013.jpg" class="header-image">
+        <img src="C:\Users\Usuario\Desktop\RESPALDO\Desktop\programar\monica\IMG-20250227-WA0017.jpg" class="header-image">
+    </div>
+
+    <script>
+        let images = document.querySelectorAll('.header-image');
+        let index = 0;
+    
+        setInterval(() => {
+            images[index].classList.remove('active');
+            index = (index + 1) % images.length;
+            images[index].classList.add('active');
+        }, 3000);
+    </script>
+
+    <div class="container">
+        <h2>¿Quieres saber que hago?</h2>
+        <p>Me gano la vida mejorando el aspecto de aquellas mujeres que no estan satisfechas
+            consigo mismas, ademas de todas las cosas que hago para cambiar la imagen de 
+            mujeres y hombres, lo que mas me apasiona y a lo que me llevo años aprender es a 
+            mejorar la vida de aquellas mujeres que han perdido algo de ellas que las hace sentir vacias,
+            hablo de mujeres que han pasado por un cancer de mama que se ha llevado parte de ellas.</p>
+
+            <p> Me dedico a intentar llenar parte del vacio de ciertas mujeres que se sienten incompletas.
+        </p>
+        <section id="servicios">
+            <div class="servicios-grid">
+                <div class="servicio">
+                    <img src="C:\Users\Usuario\Desktop\RESPALDO\Desktop\programar\monica\IMG-20250227-WA0008.jpg" alt="Consultoría">
+                    <img src="c:\Users\Usuario\Desktop\RESPALDO\Desktop\programar\monica\IMG-20250227-WA0021.jpg" alt="Consultoría">
+
+                </div>
+            </div>
+        <h2>Un poco sobre mi</h2>
+        <p>Yo soy una mujer que le dedico muchos años de su vida a esta carrera, tuve muchos obstaculos en la vida que me puso
+            el universo para poder tener mas aprendizaje y profesionalismo a lo largo de esta carrera. </p>
+
+            <p> En 2019 me detectaron un tumor en la mama que podria llegar a provocarme un cancer, por suerte
+    no fue grave, sin quimio ni algun tipo de tratamiento. Comprendo a cada una del las mujeres que han 
+pasado por algo asi a pesar de no haber tenido consecuencias graves, se lo dificil que es perder una parte de ti 
+y comprendo perfectamente a todas mis pasientes.</p>
+
+ <p>Por eso me dispuse a ser profesional en la micropigmentacion,
+sabiendo que con ello puedo ayudar a cerrar ese capitulo en la vida de alguna mujer al devolverle una parte de su feminidad 
+y conectar con su cuerpo de una manera positiva.</p>
+
+        <h2>Puedes comunicarte conmigo. Siempre disponible</h2>
+        <div class="social-link">
+            <a href="https://wa.me/59894651659" target="_blank">💬WhatsApp</a>
+        </div>                
+    </div>
+
+    <div class="footer">
+        <p>&copy; Creada por: Vanina Salinas</p>
+    </div>
+
+    <img src="C:\Users\Usuario\Downloads\descarga.png" alt="Logo" class="logo">
+</body>
+</html>
